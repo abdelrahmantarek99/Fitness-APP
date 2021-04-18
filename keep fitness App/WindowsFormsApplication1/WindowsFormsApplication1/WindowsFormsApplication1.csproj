@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8D86656-0C5E-4A5E-BA13-7D14E61A17B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Core">
+      <HintPath>..\..\..\Bunifu UI WinForms 1.8.0.1\Bunifu.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Compressed\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="before and after.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="before and after.Designer.cs">
+      <DependentUpon>before and after.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excersise_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Excersise_UC.Designer.cs">
+      <DependentUpon>Excersise_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forget_pass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forget_pass.Designer.cs">
+      <DependentUpon>forget_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Good_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Good_UC.Designer.cs">
+      <DependentUpon>Good_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="History_UC.Designer.cs">
+      <DependentUpon>History_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Meals.Designer.cs">
+      <DependentUpon>Meals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meals_Hist_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Meals_Hist_UC.Designer.cs">
+      <DependentUpon>Meals_Hist_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount_Uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyAccount_Uc.Designer.cs">
+      <DependentUpon>MyAccount_Uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notes2_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notes2_UC.Designer.cs">
+      <DependentUpon>Notes2_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notes_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="notes_UC.Designer.cs">
+      <DependentUpon>notes_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panel2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panel2.Designer.cs">
+      <DependentUpon>panel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rate_feedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rate_feedback.Designer.cs">
+      <DependentUpon>Rate_feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Records_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Records_UC.Designer.cs">
+      <DependentUpon>Records_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="success.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="success.Designer.cs">
+      <DependentUpon>success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toka.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="toka.Designer.cs">
+      <DependentUpon>toka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC.Designer.cs">
+      <DependentUpon>UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc_end.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_end.Designer.cs">
+      <DependentUpon>Uc_end.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc_info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_info.Designer.cs">
+      <DependentUpon>Uc_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc_log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_log.Designer.cs">
+      <DependentUpon>Uc_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uc_reg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Uc_reg.Designer.cs">
+      <DependentUpon>Uc_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl4.Designer.cs">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weight_chart_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Weight_chart_UC.Designer.cs">
+      <DependentUpon>Weight_chart_UC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="before and after.resx">
+      <DependentUpon>before and after.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excersise_UC.resx">
+      <DependentUpon>Excersise_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forget_pass.resx">
+      <DependentUpon>forget_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Good_UC.resx">
+      <DependentUpon>Good_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History_UC.resx">
+      <DependentUpon>History_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meals.resx">
+      <DependentUpon>Meals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meals_Hist_UC.resx">
+      <DependentUpon>Meals_Hist_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount_Uc.resx">
+      <DependentUpon>MyAccount_Uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes2_UC.resx">
+      <DependentUpon>Notes2_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notes_UC.resx">
+      <DependentUpon>notes_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel2.resx">
+      <DependentUpon>panel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rate_feedback.resx">
+      <DependentUpon>Rate_feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records_UC.resx">
+      <DependentUpon>Records_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="success.resx">
+      <DependentUpon>success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toka.resx">
+      <DependentUpon>toka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC.resx">
+      <DependentUpon>UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_end.resx">
+      <DependentUpon>Uc_end.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_info.resx">
+      <DependentUpon>Uc_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_log.resx">
+      <DependentUpon>Uc_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uc_reg.resx">
+      <DependentUpon>Uc_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl4.resx">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Weight_chart_UC.resx">
+      <DependentUpon>Weight_chart_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-key-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\do1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fcc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button-gif-4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diet_surprise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balanza2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\before-after.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthy-eating-habits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad-food-choices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger-and-soda-meal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretching-exercises.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strength.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard-with-pencil-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overwright.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overweight-woman-clipart-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speak_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health-and-fitness-events-in-boston-rally-sports-and-general-assembly1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-motivation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mom-hacks-health-and-fitness-shortcuts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15-health-and-fitness-habits-you-should-start-doing-this-year-1024x676.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200bbw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20b0w.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2400.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\il_fullxfull.760766727_1rch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
